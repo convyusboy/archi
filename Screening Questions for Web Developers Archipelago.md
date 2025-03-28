@@ -71,9 +71,6 @@ interface Photo {
 # <a name="_fnjk6vnqzbqk"></a>Database Questions (Skip if no experience)
 Open this link: [Basic SQL Emulator](https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_all)
 
-1. Notice all the tables available here:
-   ![](Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.003.png)
-
 **Level 1 (Novice - Expected Task Time: 1 minute):**
 
 Write a SQL query that shows me how many customers there are from Germany.
@@ -84,10 +81,9 @@ SELECT \* FROM Customers where Country = 'Germany';
 
 Write a query that shows me a list of the countries that have the most customers; from most customers to least customers.  Don’t show countries that have less than 5 customers.
 
-SELECT Count(CustomerID) as 'COUNT(CustomerID)', Country FROM Customers GROUP BY Country having Count(CustomerID) > 4 ORDER BY Count(CustomerID) DESC;
-
 Answer:
-![](Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.004.png)
+
+SELECT Count(CustomerID) as 'COUNT(CustomerID)', Country FROM Customers GROUP BY Country having Count(CustomerID) > 4 ORDER BY Count(CustomerID) DESC;
 
 **Level 3 (Average Developer - Expected Task Time <8 minutes):**
 
@@ -99,7 +95,6 @@ Actually using the link [Basic SQL Emulator](https://www.w3schools.com/sql/trysq
 
 SELECT c.CustomerName, COUNT(o.OrderId) AS 'OrderCount', MIN(o.OrderDate) AS 'FirstOrder', MAX(o.OrderDate) AS 'LastOrder' FROM Orders o INNER JOIN Customers c on o.CustomerId = c.CustomerId GROUP BY o.CustomerId, c.CustomerName HAVING COUNT(o.OrderId) > 4 ORDER BY MAX(o.OrderDate) DESC;
 
-![](Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.005.png)
 # <a name="_2fup1svvujrd"></a>
 # <a name="_chto247rp9sq"></a>JavaScript/TypeScript Questions
 Answer as many levels as you can… the level you reach will only affect the type of position you’re qualified for - we have many positions available.  But if you don’t complete level 1, you won’t get an interview.
@@ -249,7 +244,6 @@ If you’d like to be considered for a **senior role** or **lead role**, please 
 
 See example below:
 
-![](Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.006.png)
 
 Answer:
 
@@ -266,8 +260,8 @@ Answer:
 
   There can be two types of data flow between components:
 
-- Parent component to Child Component - We can send data from the parent component to the child component using props.
-- Child component to Parent Component - We can send data by emitting an event from the Child component and listen to it on the other end (Parent component).
+1. Parent component to Child Component - We can send data from the parent component to the child component using props.
+1. Child component to Parent Component - We can send data by emitting an event from the Child component and listen to it on the other end (Parent component).
 - List the most common cause of memory leaks in Vue.js apps and how they can be solved.
 
   Memory leaks in Vue.js usually arise due to the improper management of components, global event buses, event listeners, and references.
@@ -461,9 +455,3 @@ Create a function that counts the word frequency in this string "Four, One two t
 - Unit testing - 5
 - Kanban boards - 3
 
-![short dash](Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.007.png)
-![footer]
-
-[horizontal line]: Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.001.png
-[short line]: Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.002.png
-[footer]: Aspose.Words.90307872-2e98-48eb-8c84-5d083bce0432.008.png
